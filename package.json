@@ -4,7 +4,7 @@
   "description": "Convert HTML flat file sites to Apps",
   "main": "lib/index.js",
   "bin": {
-    "html-to-app": "htmltoapp.js"
+    "html-to-app": "bin/htmltoapp.js"
   },
   "directories": {
     "lib": "lib"
