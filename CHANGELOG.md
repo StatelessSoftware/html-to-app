@@ -4,4 +4,6 @@
 
 ### Fixes
 
+- Remove config directory from source-control
+- Create a blank config file if non-existant
 - Changed the default image import path from `./assets/images/` to `./images`
