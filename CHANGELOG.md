@@ -1,5 +1,11 @@
 # Changelog - html-to-app
 
+## [0.1.0] - 2018-03-26
+
+### Fixes
+
+- [Issue #5] - Build fails if images directory doesnt exist
+
 ## [0.0.2] - 2018-03-24
 
 ### Fixes
