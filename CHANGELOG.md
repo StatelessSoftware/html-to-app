@@ -12,6 +12,7 @@
 
 - [Issue #8] - Out-of-source build creates extra subnested dist folder
 - [Issue #5] - Build fails if images directory doesnt exist
+- [Issue #3] - Default config should support out-of-source build
 
 ## [0.0.2] - 2018-03-24
 
