@@ -2,10 +2,13 @@
 
 ## [0.1.0] - 2018-03-26
 
+### Additions
+
+- [Issue #6] - Converter needs to remap directories
+
 ### Fixes
 
 - [Issue #8] - Out-of-source build creates extra subnested dist folder
-- [Issue #6] - Converter needs to remap directories
 - [Issue #5] - Build fails if images directory doesnt exist
 
 ## [0.0.2] - 2018-03-24
