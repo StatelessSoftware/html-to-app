@@ -4,6 +4,7 @@
 
 ### Additions
 
+- [Issue #10] - Config creator should export full-featured config file
 - [Issue #6] - Converter needs to remap directories
 
 ### Fixes
