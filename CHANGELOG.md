@@ -4,6 +4,7 @@
 
 ### Fixes
 
+- [Issue #6] - Converter needs to remap directories
 - [Issue #5] - Build fails if images directory doesnt exist
 
 ## [0.0.2] - 2018-03-24
