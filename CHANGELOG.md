@@ -1,5 +1,21 @@
 # Changelog - html-to-app
 
+## [0.1.0] - 2018-03-26
+
+### Additions
+
+- [Issue #10] - Config creator should export full-featured config file
+- [Issue #7] - Pre & Post commands at each step
+- [Issue #6] - Converter needs to remap directories
+- [Issue #2] - Importer should have ignore files functionality
+
+### Fixes
+
+- [Issue #8] - Out-of-source build creates extra subnested dist folder
+- [Issue #5] - Build fails if images directory doesnt exist
+- [Issue #4] - Default config file should be in seperate file
+- [Issue #3] - Default config should support out-of-source build
+
 ## [0.0.2] - 2018-03-24
 
 ### Fixes

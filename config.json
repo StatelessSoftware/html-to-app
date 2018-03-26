@@ -1,0 +1,58 @@
+{
+    "importer": {
+        "dirHTML": "./html/",
+        "dirImages": "./html/images",
+        "dirCSS": "./html/",
+        "dirJS": "./html/",
+
+        "typeCSS": "scss",
+        "typeJS": "js",
+
+        "layoutFile": "layout.html",
+        "ignoreViews": [
+            "styleguide.html"
+        ],
+
+        "precmd": "echo 'test' >> test.txt",
+        "postcmd": ""
+
+    },
+    "converter": {
+        "layout": {
+            "target": "document.documentElement.outerHTML",
+            "remove": "pingendo",
+            "prepend": "<!DOCTYPE html>",
+            "append": "",
+            "remap": []
+        },
+        "view": {
+            "target": "document.body.innerHTML",
+            "remove": "script, pingendo",
+            "prepend": "",
+            "append": "",
+            "remap": []
+        },
+
+        "precmd": "",
+        "postcmd": ""
+    },
+    "builder": {
+        "dirBuild": "./dist",
+        "installCmd": "express -v hbs -c sass && npm i",
+        "cleanupCmd": "rm -rf public/* views/*.hbs",
+
+        "precmd": "",
+        "postcmd": ""
+    },
+    "exporter": {
+        "dirBuild": "./dist",
+        "dirViews": "./views",
+        "dirImages": "./public/images",
+        "dirCSS": "./public/stylesheets",
+        "dirJS": "./public/javascripts",
+        "viewExtension": ".hbs",
+
+        "precmd": "",
+        "postcmd": ""
+    }
+}
