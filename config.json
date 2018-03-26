@@ -11,7 +11,10 @@
         "layoutFile": "layout.html",
         "ignoreViews": [
             "styleguide.html"
-        ]
+        ],
+
+        "precmd": "echo 'test' >> test.txt",
+        "postcmd": ""
 
     },
     "converter": {
@@ -28,12 +31,18 @@
             "prepend": "",
             "append": "",
             "remap": []
-        }
+        },
+
+        "precmd": "",
+        "postcmd": ""
     },
     "builder": {
         "dirBuild": "./dist",
         "installCmd": "express -v hbs -c sass && npm i",
-        "cleanupCmd": "rm -rf public/* views/*.hbs"
+        "cleanupCmd": "rm -rf public/* views/*.hbs",
+
+        "precmd": "",
+        "postcmd": ""
     },
     "exporter": {
         "dirBuild": "./dist",
@@ -41,6 +50,9 @@
         "dirImages": "./public/images",
         "dirCSS": "./public/stylesheets",
         "dirJS": "./public/javascripts",
-        "viewExtension": ".hbs"
+        "viewExtension": ".hbs",
+
+        "precmd": "",
+        "postcmd": ""
     }
 }

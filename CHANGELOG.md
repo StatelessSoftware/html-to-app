@@ -5,6 +5,7 @@
 ### Additions
 
 - [Issue #10] - Config creator should export full-featured config file
+- [Issue #7] - Pre & Post commands at each step
 - [Issue #6] - Converter needs to remap directories
 - [Issue #2] - Importer should have ignore files functionality
 
