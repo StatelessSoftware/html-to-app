@@ -4,6 +4,7 @@
 
 ### Fixes
 
+- [Issue #13] - html-to-app fails if out-of-source build, with -f, and dist folder already existing
 - [Issue #12] - html-to-app -c should kill program after creating config file
 
 ## [0.1.0] - 2018-03-26
