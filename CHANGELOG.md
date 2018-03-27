@@ -5,6 +5,7 @@
 ### Additions
 
 - [Issue #18] - App directory
+- [Issue #17] - Readme
 
 ## [0.1.1] - 2018-03-26
 
