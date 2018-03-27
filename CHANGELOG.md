@@ -4,6 +4,7 @@
 
 ### Fixes
 
+- [Issue #14] - Checking builder.shouldBuild() is not idempotent
 - [Issue #13] - html-to-app fails if out-of-source build, with -f, and dist folder already existing
 - [Issue #12] - html-to-app -c should kill program after creating config file
 
