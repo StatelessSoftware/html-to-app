@@ -46,6 +46,7 @@
     },
     "exporter": {
         "dirBuild": "./dist",
+        "dirMerge": "./app",
         "dirViews": "./views",
         "dirImages": "./public/images",
         "dirCSS": "./public/stylesheets",
