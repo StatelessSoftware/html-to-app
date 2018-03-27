@@ -4,6 +4,8 @@
 
 ### Fixes
 
+- [Issue #12] - html-to-app -c should kill program after creating config file
+
 ## [0.1.0] - 2018-03-26
 
 ### Additions
