@@ -7,6 +7,10 @@
 - [Issue #18] - App directory
 - [Issue #17] - Readme
 
+### Fixes
+
+- [Issue #19] - Remove testing tag from config
+
 ## [0.1.1] - 2018-03-26
 
 ### Fixes
