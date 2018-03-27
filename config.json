@@ -20,14 +20,14 @@
     "converter": {
         "layout": {
             "target": "document.documentElement.outerHTML",
-            "remove": "pingendo",
+            "remove": "",
             "prepend": "<!DOCTYPE html>",
             "append": "",
             "remap": []
         },
         "view": {
             "target": "document.body.innerHTML",
-            "remove": "script, pingendo",
+            "remove": "script",
             "prepend": "",
             "append": "",
             "remap": []
@@ -46,6 +46,7 @@
     },
     "exporter": {
         "dirBuild": "./dist",
+        "dirMerge": "./app",
         "dirViews": "./views",
         "dirImages": "./public/images",
         "dirCSS": "./public/stylesheets",
