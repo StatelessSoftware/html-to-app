@@ -1,5 +1,13 @@
 # Changelog - html-to-app
 
+## [0.2.1] - 2018-03-29
+
+### Additions
+
+- [Issue #21] - Allow for contributions (md files, etc)
+
+### Fixes
+
 ## [0.2.0] - 2018-03-27
 
 ### Additions
