@@ -8,6 +8,8 @@
 
 ### Fixes
 
+- [Issue #22] - Configuration file created successfully even if it exists.
+
 ## [0.2.0] - 2018-03-27
 
 ### Additions
