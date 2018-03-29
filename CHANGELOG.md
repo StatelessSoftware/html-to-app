@@ -8,6 +8,7 @@
 
 ### Fixes
 
+- [Issue #24] - App merge doesn't work
 - [Issue #23] - Remaps with hash checks result in 403
 - [Issue #22] - Configuration file created successfully even if it exists.
 

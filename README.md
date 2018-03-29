@@ -80,6 +80,7 @@ The configuration consists of 4 top-level build-chain objects: importer, convert
 ## Builder
 
 - **dirBuild** - Build directory
+- **dirMerge** - App directory to merge with the build
 - **installCmd** - Command to install the app (e.g. `express`)
 - **cleanupCmd** - Command to run after the app installs (inside the build directory)
 - **precmd** - Shell command to run before the build
@@ -88,7 +89,6 @@ The configuration consists of 4 top-level build-chain objects: importer, convert
 ## Exporter
 
 - **dirBuild** - Export directory (can be seperate from the build directory)
-- **dirMerge** - App directory to merge with the build
 - **dirViews** - Directory to export views to (inside the build)
 - **dirImages** - Directory to copy images to (inside the build)
 - **dirCSS** - Directory to copy css to
