@@ -8,6 +8,7 @@
 
 ### Fixes
 
+- [Issue #23] - Remaps with hash checks result in 403
 - [Issue #22] - Configuration file created successfully even if it exists.
 
 ## [0.2.0] - 2018-03-27
