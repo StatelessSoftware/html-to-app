@@ -38,6 +38,7 @@
     },
     "builder": {
         "dirBuild": "./dist",
+        "dirMerge": "./app",
         "installCmd": "express -v hbs -c sass && npm i",
         "cleanupCmd": "rm -rf public/* views/*.hbs",
 
@@ -46,7 +47,6 @@
     },
     "exporter": {
         "dirBuild": "./dist",
-        "dirMerge": "./app",
         "dirViews": "./views",
         "dirImages": "./public/images",
         "dirCSS": "./public/stylesheets",

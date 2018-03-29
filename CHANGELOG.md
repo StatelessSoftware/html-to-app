@@ -1,5 +1,17 @@
 # Changelog - html-to-app
 
+## [0.2.1] - 2018-03-29
+
+### Additions
+
+- [Issue #21] - Allow for contributions (md files, etc)
+
+### Fixes
+
+- [Issue #24] - App merge doesn't work
+- [Issue #23] - Remaps with hash checks result in 403
+- [Issue #22] - Configuration file created successfully even if it exists.
+
 ## [0.2.0] - 2018-03-27
 
 ### Additions
