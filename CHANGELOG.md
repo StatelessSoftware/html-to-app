@@ -1,5 +1,9 @@
 # Changelog - html-to-app
 
+## [0.2.2] - 2018-03-30
+
+### Fixes
+
 ## [0.2.1] - 2018-03-29
 
 ### Additions

@@ -1,6 +1,6 @@
 {
   "name": "html-to-app",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Convert HTML flat file sites to Apps",
   "main": "lib/index.js",
   "bin": {
