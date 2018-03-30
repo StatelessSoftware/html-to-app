@@ -1,5 +1,13 @@
 # Changelog - html-to-app
 
+## [0.2.2] - 2018-03-30
+
+### Fixes
+
+- [Issue #30] - Remaps with same tag seem to interfere
+- [Issue #29] - Build -f throws exception if app is open in another window
+- [Issue #28] - App isn't merged without -f
+
 ## [0.2.1] - 2018-03-29
 
 ### Additions
