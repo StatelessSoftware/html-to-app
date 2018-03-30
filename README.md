@@ -39,6 +39,7 @@ The configuration consists of 4 top-level build-chain objects: importer, convert
 
 ## Importer
 
+- **url** - URL to convert relative paths to during remap.  Will default to an absolute `file:///` path.
 - **dirHTML** - The location of the HTML flat-files, relative to the current working directory.
 - **dirImages** - The location of asset images in the flat-file site.
 - **dirCSS** - The location of css (css, less, sass, etc) files to copy

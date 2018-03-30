@@ -12,6 +12,7 @@
         "ignoreViews": [
             "styleguide.html"
         ],
+        "url": "http://localhost:3000/",
 
         "precmd": "",
         "postcmd": ""
