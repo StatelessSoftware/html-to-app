@@ -4,6 +4,8 @@
 
 ### Additions
 
+- [Issue #31] - Remap automatically converts relative paths to absolute path
+
 ## [0.2.2] - 2018-03-30
 
 ### Fixes
