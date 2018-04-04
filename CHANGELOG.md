@@ -4,6 +4,8 @@
 
 ### Additions
 
+- [Issue #36] - Layout file should not be required
+
 ### Fixes
 
 ## [0.3.0] - 2018-03-30
