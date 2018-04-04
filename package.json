@@ -1,8 +1,8 @@
 {
   "name": "html-to-app",
-  "version": "0.4.0",
+  "version": "1.0.0",
   "description": "Convert HTML flat file sites to Apps",
-  "main": "lib/index.js",
+  "main": "index.js",
   "bin": {
     "html-to-app": "bin/htmltoapp.js"
   },
@@ -10,16 +10,11 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "node lib/index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DrewImm/html-to-app.git"
-  },
-  "dependencies": {
-    "command-line-args": "^5.0.2",
-    "config": "^1.30.0",
-    "jsdom": "^11.6.2"
   },
   "keywords": [],
   "author": "",
@@ -27,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/DrewImm/html-to-app/issues"
   },
-  "homepage": "https://github.com/DrewImm/html-to-app#readme"
+  "homepage": "https://github.com/DrewImm/html-to-app#readme",
+  "dependencies": {
+    "cli-configurator": "github:StatelessSoftware/cli-configurator",
+    "command-line-args": "^5.0.2",
+    "jsdom": "^11.7.0"
+  }
 }
