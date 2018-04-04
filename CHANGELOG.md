@@ -8,6 +8,8 @@
 
 ### Fixes
 
+- [Issue #38] - Throws exception if app directory does not exist or is empty
+
 ## [0.3.0] - 2018-03-30
 
 ### Additions
