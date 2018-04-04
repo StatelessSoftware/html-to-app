@@ -1,5 +1,15 @@
 # Changelog - html-to-app
 
+## [0.4.0] - 2018-04-04
+
+### Additions
+
+- [Issue #36] - Layout file should not be required
+
+### Fixes
+
+- [Issue #38] - Throws exception if app directory does not exist or is empty
+
 ## [0.3.0] - 2018-03-30
 
 ### Additions
