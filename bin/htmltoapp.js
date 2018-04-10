@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-var htmltoapp = require("../lib/index.js");
+var htmltoapp = require("../index.js");
