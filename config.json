@@ -1,60 +1,62 @@
 {
-    "importer": {
-        "dirHTML": "./html/",
-        "dirImages": "./html/images",
-        "dirCSS": "./html/",
-        "dirJS": "./html/",
-
-        "typeCSS": "scss",
-        "typeJS": "js",
-
-        "layoutFile": "layout.html",
-        "ignoreViews": [
-            "styleguide.html"
-        ],
+    "html-to-app": {
+        "buildDirectory": "./build",
+        "appDirectory": "./app",
         "url": "http://localhost:3000/",
-
-        "precmd": "",
-        "postcmd": ""
-
-    },
-    "converter": {
-        "layout": {
-            "target": "document.documentElement.outerHTML",
-            "remove": "",
-            "prepend": "<!DOCTYPE html>",
-            "append": "",
-            "remap": []
+        "useRelative": true,
+        "importer": {
+            "viewDirectory": "./mockup",
+            "imageDirectory": "./mockup/images",
+            "styleDirectory": "./mockup",
+            "scriptDirectory": "./mockup/scripts",
+            
+            "layout": "layout",
+            "ignore": [
+                "styleguide.html"
+            ],
+            "styleType": "css",
+            "scriptType": "js",
+    
+            "precmd": "",
+            "postcmd": ""
+    
         },
-        "view": {
-            "target": "document.body.innerHTML",
-            "remove": "script",
-            "prepend": "",
-            "append": "",
-            "remap": []
+        "converter": {
+            "layout": {
+                "target": "document.documentElement.outerHTML",
+                "remove": "",
+                "prepend": "<!DOCTYPE html>",
+                "append": "",
+                "remap": []
+            },
+            "view": {
+                "target": "document.body.innerHTML",
+                "remove": "script",
+                "prepend": "",
+                "append": "",
+                "remap": [],
+                "inheritLayout": true
+            },
+    
+            "precmd": "",
+            "postcmd": ""
         },
-
-        "precmd": "",
-        "postcmd": ""
-    },
-    "builder": {
-        "dirBuild": "./dist",
-        "dirMerge": "./app",
-        "installCmd": "express -v hbs -c sass && npm i",
-        "cleanupCmd": "rm -rf public/* views/*.hbs",
-
-        "precmd": "",
-        "postcmd": ""
-    },
-    "exporter": {
-        "dirBuild": "./dist",
-        "dirViews": "./views",
-        "dirImages": "./public/images",
-        "dirCSS": "./public/stylesheets",
-        "dirJS": "./public/javascripts",
-        "viewExtension": ".hbs",
-
-        "precmd": "",
-        "postcmd": ""
+        "builder": {
+            "installCmd": "",
+            "cleanupCmd": "",
+    
+            "precmd": "",
+            "postcmd": ""
+        },
+        "exporter": {
+			"viewDirectory": "./build/views",
+			"imageDirectory": "./build/public/images",
+			"styleDirectory": "./build/public/stylesheets",
+			"scriptDirectory": "./build/public/javascripts",
+            "viewExtension": ".hbs",
+    
+            "precmd": "",
+            "postcmd": ""
+        }
     }
 }

@@ -26,6 +26,7 @@
   "dependencies": {
     "cli-configurator": "github:StatelessSoftware/cli-configurator",
     "command-line-args": "^5.0.2",
-    "jsdom": "^11.7.0"
+    "jsdom": "^11.7.0",
+    "shelljs": "^0.8.1"
   }
 }

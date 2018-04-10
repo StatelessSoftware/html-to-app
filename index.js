@@ -5,14 +5,29 @@ const env = process.env.NODE_ENV || 'default';
 const getCliArguments = require("command-line-args");
 const CliConfigurator = require("cli-configurator");
 
+// Import chainlinks
+let Importer = require("./lib/importer");
+let Converter = require("./lib/converter");
+let Builder = require("./lib/builder");
+let Exporter = require("./lib/exporter");
+
 // Setup cli parameters
 let cli = require("./lib/cli")();
 let configurator = new CliConfigurator("html-to-app");
 
+// Load the default config
+let defaultConfig = false;
+try {
+    defaultConfig = require("./config.json")["html-to-app"];
+}
+catch (ex) {
+    console.log("Could not load default configuration file.");
+}
+
 // Check if we're just trying to create a config file
 if (cli.createConfig) {
     try {
-        configurator.write(require("./config.json"));
+        configurator.write(defaultConfig);
         console.log("Config file created.");
     }
     catch (ex) {
@@ -25,47 +40,44 @@ if (cli.createConfig) {
 // Get the existing config file
 let config = false;
 try {
-    config = configurator.get();
+    config = configurator.read();
 }
-catch (ex) {
-    // No config, use default
-    config = require("./config.json");
+catch (ex) {    // No config, use default
+    config = defaultConfig;
 }
 
-// Import chainlinks
-let importer = require("./lib/chainlinks/importer");
-let converter = require("./lib/chainlinks/converter");
-let builder = require("./lib/chainlinks/builder");
-let exporter = require("./lib/chainlinks/exporter");
+if (config === false) {
+    config = defaultConfig;
+}
+
+// Create the chainlinks
+let importer = new Importer(cli, config);
+let converter = new Converter(cli, config);
+let builder = new Builder(cli, config);
+let exporter = new Exporter(cli, config);
+
+// Create the payload
+let payload = new Object();
 
 // Start the engine
 console.log("Importing...");
-executeCommand(importer.precmd);
 importer.run(payload)
-    .then((payload) => {
-        executeCommand(importer.postcmd);
-        executeCommand(converter.precmd);
+    .then(payload => {
         console.log("Converting...");
         return converter.run(payload);
     })
-    .then((payload) => {
-        executeCommand(converter.postcmd);
-        executeCommand(builder.precmd);
+    .then(payload => {
         console.log("Building...");
         return builder.run(payload);
     })
-    .then((payload) => {
-        executeCommand(builder.postcmd);
-        executeCommand(exporter.precmd);
+    .then(payload => {
         console.log("Exporting...");
         return exporter.run(payload);
     })
-    .then((payload) => {
-        executeCommand(exporter.postcmd);
-        console.log("Exported", payload, "files.");
-        console.log("Finished.");
+    .then(payload => {
+        console.log("Done.");
     })
-    .catch((error) => {
+    .catch(error => {
         console.log(error);
     })
 ;
