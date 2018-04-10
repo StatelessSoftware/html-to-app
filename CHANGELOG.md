@@ -1,5 +1,23 @@
 # Changelog - html-to-app
 
+## [1.0.0] - 2018-04-10
+
+### Changes
+
+- Config file has been completely rewritten to clean it up and allow for this version's additions
+- Dependency `shelljs` added to perform command-line operations safely
+
+### Additions
+
+- Added `appDirectory` config option to allow an app folder to be merged with the build
+- Added `url` config option to set the output URL
+- Added `useRelative` option to convert the URL to `/`
+- Added `inheritLayout` option to `converter/view` config to allow the views to absorb the layout
+
+### Fixes
+
+- [Issue #35] - Config creator should be able to append to existing config
+
 ## [0.4.0] - 2018-04-04
 
 ### Additions
